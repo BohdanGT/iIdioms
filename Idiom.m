@@ -8,8 +8,37 @@
 
 #import "Idiom.h"
 
+@interface Idiom()
+-(id) init;
+@end
+
 @implementation Idiom
 @synthesize IdiomName = _idiomName;
 @synthesize IdiomDescription = _idiomDescription;
-@synthesize IdiomExample = _IdiomExample;
+@synthesize IdiomExample = _idiomExample;
+
+
+-(id) initWithName:(NSString *)theIdiomName IdiomDescription:(NSString *) theIdiomDescription IdiomExample:(NSString *) theIdiomExample
+{
+    if (self = [super init]) {
+        
+        _idiomName = theIdiomName;
+        _idiomDescription = theIdiomDescription;
+        _idiomExample = theIdiomExample;
+        
+    }
+    
+    return self;
+} // end initWithName:IdiomDescription:IdiomExample
+
+-(id) init
+{
+    return  [super init];
+}
+
+-(NSString *) description
+{
+    return [NSString stringWithFormat:@"Idiom name: %@; Idiom descrition: %@; Idiom example: %@", _idiomName, _idiomDescription, _idiomExample];
+}
+
 @end

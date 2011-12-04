@@ -9,8 +9,14 @@
 #import <Foundation/Foundation.h>
 
 @interface Idiom : NSObject
+{
 
-@property (copy, nonatomic) NSString *IdiomName;
-@property (copy, nonatomic) NSString *IdiomDescription;
-@property (copy, nonatomic) NSString *IdiomExample;
+}
+
+@property (copy, nonatomic, readonly) NSString *IdiomName;
+@property (copy, nonatomic, readonly) NSString *IdiomDescription;
+@property (copy, nonatomic, readonly) NSString *IdiomExample;
+
+-(id) initWithName:(NSString *)theIdiomName IdiomDescription:(NSString *) theIdiomDescription IdiomExample:(NSString *) theIdiomExample;
+
 @end

@@ -14,9 +14,11 @@
 		47ACA9C9148AC24600B7B971 /* iIdiomsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ACA9C8148AC24600B7B971 /* iIdiomsAppDelegate.m */; };
 		47ACA9CC148AC24600B7B971 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47ACA9CA148AC24600B7B971 /* MainMenu.xib */; };
 		47ACA9D5148AC2D300B7B971 /* Idiom.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ACA9D4148AC2D300B7B971 /* Idiom.m */; };
+		47ACA9D8148AC60B00B7B971 /* IdiomsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ACA9D7148AC60B00B7B971 /* IdiomsProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		471C4E0B148BFF3500D292CF /* NewIdiomArriveDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewIdiomArriveDelegate.h; sourceTree = "<group>"; };
 		47ACA9B1148AC24600B7B971 /* iIdioms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iIdioms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47ACA9B5148AC24600B7B971 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		47ACA9B8148AC24600B7B971 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -32,6 +34,8 @@
 		47ACA9CB148AC24600B7B971 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		47ACA9D3148AC2D300B7B971 /* Idiom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Idiom.h; sourceTree = "<group>"; };
 		47ACA9D4148AC2D300B7B971 /* Idiom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Idiom.m; sourceTree = "<group>"; };
+		47ACA9D6148AC60B00B7B971 /* IdiomsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IdiomsProvider.h; path = iIdioms/IdiomsProvider.h; sourceTree = "<group>"; };
+		47ACA9D7148AC60B00B7B971 /* IdiomsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IdiomsProvider.m; path = iIdioms/IdiomsProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,9 +50,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		471C4E06148BFE9800D292CF /* IdiomsProvider */ = {
+			isa = PBXGroup;
+			children = (
+				47ACA9D6148AC60B00B7B971 /* IdiomsProvider.h */,
+				47ACA9D7148AC60B00B7B971 /* IdiomsProvider.m */,
+				471C4E0B148BFF3500D292CF /* NewIdiomArriveDelegate.h */,
+			);
+			name = IdiomsProvider;
+			sourceTree = "<group>";
+		};
 		47ACA9A6148AC24600B7B971 = {
 			isa = PBXGroup;
 			children = (
+				471C4E06148BFE9800D292CF /* IdiomsProvider */,
 				47ACA9D2148AC2BB00B7B971 /* Models */,
 				47ACA9BB148AC24600B7B971 /* iIdioms */,
 				47ACA9B4148AC24600B7B971 /* Frameworks */,
@@ -182,6 +197,7 @@
 				47ACA9C2148AC24600B7B971 /* main.m in Sources */,
 				47ACA9C9148AC24600B7B971 /* iIdiomsAppDelegate.m in Sources */,
 				47ACA9D5148AC2D300B7B971 /* Idiom.m in Sources */,
+				47ACA9D8148AC60B00B7B971 /* IdiomsProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +281,7 @@
 		47ACA9D0148AC24600B7B971 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iIdioms/iIdioms-Prefix.pch";
 				INFOPLIST_FILE = "iIdioms/iIdioms-Info.plist";
@@ -276,6 +293,7 @@
 		47ACA9D1148AC24600B7B971 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iIdioms/iIdioms-Prefix.pch";
 				INFOPLIST_FILE = "iIdioms/iIdioms-Info.plist";
@@ -303,6 +321,7 @@
 				47ACA9D1148AC24600B7B971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

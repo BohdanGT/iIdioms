@@ -7,9 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "NewIdiomArriveDelegate.h"
+@class IdiomsProvider;
 
-@interface iIdiomsAppDelegate : NSObject <NSApplicationDelegate>
+@interface iIdiomsAppDelegate : NSObject <NSApplicationDelegate, NewIdiomArriveDelegate>
+{
+    IdiomsProvider *idiomsProvider;
+}
 
 @property (assign) IBOutlet NSWindow *window;
+
 
 @end
