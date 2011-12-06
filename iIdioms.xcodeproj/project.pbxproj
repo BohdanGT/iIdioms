@@ -15,6 +15,9 @@
 		47ACA9CC148AC24600B7B971 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47ACA9CA148AC24600B7B971 /* MainMenu.xib */; };
 		47ACA9D5148AC2D300B7B971 /* Idiom.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ACA9D4148AC2D300B7B971 /* Idiom.m */; };
 		47ACA9D8148AC60B00B7B971 /* IdiomsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ACA9D7148AC60B00B7B971 /* IdiomsProvider.m */; };
+		47B3ED2E148D82FB00014AF6 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B3ED2D148D82FB00014AF6 /* AppController.m */; };
+		47B3ED3F148D8BC300014AF6 /* IdiomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B3ED3D148D8BC300014AF6 /* IdiomViewController.m */; };
+		47B3ED42148D91E800014AF6 /* IdiomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47B3ED41148D91E800014AF6 /* IdiomView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,11 @@
 		47ACA9D4148AC2D300B7B971 /* Idiom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Idiom.m; sourceTree = "<group>"; };
 		47ACA9D6148AC60B00B7B971 /* IdiomsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IdiomsProvider.h; path = iIdioms/IdiomsProvider.h; sourceTree = "<group>"; };
 		47ACA9D7148AC60B00B7B971 /* IdiomsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IdiomsProvider.m; path = iIdioms/IdiomsProvider.m; sourceTree = "<group>"; };
+		47B3ED2C148D82FB00014AF6 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		47B3ED2D148D82FB00014AF6 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		47B3ED3C148D8BC300014AF6 /* IdiomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdiomViewController.h; sourceTree = "<group>"; };
+		47B3ED3D148D8BC300014AF6 /* IdiomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdiomViewController.m; sourceTree = "<group>"; };
+		47B3ED41148D91E800014AF6 /* IdiomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IdiomView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,8 @@
 		47ACA9A6148AC24600B7B971 = {
 			isa = PBXGroup;
 			children = (
+				47B3ED3B148D8B7400014AF6 /* Controllers */,
+				47B3ED34148D863800014AF6 /* nibs */,
 				471C4E06148BFE9800D292CF /* IdiomsProvider */,
 				47ACA9D2148AC2BB00B7B971 /* Models */,
 				47ACA9BB148AC24600B7B971 /* iIdioms */,
@@ -101,9 +111,10 @@
 		47ACA9BB148AC24600B7B971 /* iIdioms */ = {
 			isa = PBXGroup;
 			children = (
+				47B3ED2C148D82FB00014AF6 /* AppController.h */,
+				47B3ED2D148D82FB00014AF6 /* AppController.m */,
 				47ACA9C7148AC24600B7B971 /* iIdiomsAppDelegate.h */,
 				47ACA9C8148AC24600B7B971 /* iIdiomsAppDelegate.m */,
-				47ACA9CA148AC24600B7B971 /* MainMenu.xib */,
 				47ACA9BC148AC24600B7B971 /* Supporting Files */,
 			);
 			path = iIdioms;
@@ -128,6 +139,24 @@
 				47ACA9D4148AC2D300B7B971 /* Idiom.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		47B3ED34148D863800014AF6 /* nibs */ = {
+			isa = PBXGroup;
+			children = (
+				47B3ED41148D91E800014AF6 /* IdiomView.xib */,
+				47ACA9CA148AC24600B7B971 /* MainMenu.xib */,
+			);
+			name = nibs;
+			sourceTree = "<group>";
+		};
+		47B3ED3B148D8B7400014AF6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				47B3ED3C148D8BC300014AF6 /* IdiomViewController.h */,
+				47B3ED3D148D8BC300014AF6 /* IdiomViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +213,7 @@
 				47ACA9C0148AC24600B7B971 /* InfoPlist.strings in Resources */,
 				47ACA9C6148AC24600B7B971 /* Credits.rtf in Resources */,
 				47ACA9CC148AC24600B7B971 /* MainMenu.xib in Resources */,
+				47B3ED42148D91E800014AF6 /* IdiomView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +228,8 @@
 				47ACA9C9148AC24600B7B971 /* iIdiomsAppDelegate.m in Sources */,
 				47ACA9D5148AC2D300B7B971 /* Idiom.m in Sources */,
 				47ACA9D8148AC60B00B7B971 /* IdiomsProvider.m in Sources */,
+				47B3ED2E148D82FB00014AF6 /* AppController.m in Sources */,
+				47B3ED3F148D8BC300014AF6 /* IdiomViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +258,7 @@
 				47ACA9CB148AC24600B7B971 /* en */,
 			);
 			name = MainMenu.xib;
+			path = iIdioms;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

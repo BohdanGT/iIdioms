@@ -144,7 +144,6 @@
     if (range1.location != NSNotFound && range2.location != NSNotFound) {
         
         idiomName = [theString substringWithRange:NSMakeRange(NSMaxRange(range1), range2.location -  NSMaxRange(range1))];
-        [idiomName autorelease];
     }
     
     return idiomName;
