@@ -10,7 +10,7 @@
 #import "NewIdiomArriveDelegate.h"
 @class IdiomsProvider;
 
-@interface iIdiomsAppDelegate : NSObject <NSApplicationDelegate, NewIdiomArriveDelegate>
+@interface iIdiomsAppDelegate : NSObject <NSApplicationDelegate>
 {
     IdiomsProvider *idiomsProvider;
 }

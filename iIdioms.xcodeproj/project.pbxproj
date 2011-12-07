@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		475D08FA148FF4A2000F9F40 /* IdiomsStatusBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 475D08F9148FF4A2000F9F40 /* IdiomsStatusBarItem.m */; };
+		475D08FE1490008B000F9F40 /* tray_icon.ico in Resources */ = {isa = PBXBuildFile; fileRef = 475D08FD1490008B000F9F40 /* tray_icon.ico */; };
+		475D0902149011C7000F9F40 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 475D0901149011C7000F9F40 /* MAAttachedWindow.m */; };
 		47ACA9B6148AC24600B7B971 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47ACA9B5148AC24600B7B971 /* Cocoa.framework */; };
 		47ACA9C0148AC24600B7B971 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47ACA9BE148AC24600B7B971 /* InfoPlist.strings */; };
 		47ACA9C2148AC24600B7B971 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ACA9C1148AC24600B7B971 /* main.m */; };
@@ -22,6 +25,11 @@
 
 /* Begin PBXFileReference section */
 		471C4E0B148BFF3500D292CF /* NewIdiomArriveDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewIdiomArriveDelegate.h; sourceTree = "<group>"; };
+		475D08F8148FF4A2000F9F40 /* IdiomsStatusBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdiomsStatusBarItem.h; sourceTree = "<group>"; };
+		475D08F9148FF4A2000F9F40 /* IdiomsStatusBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdiomsStatusBarItem.m; sourceTree = "<group>"; };
+		475D08FD1490008B000F9F40 /* tray_icon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = tray_icon.ico; sourceTree = "<group>"; };
+		475D0900149011C7000F9F40 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
+		475D0901149011C7000F9F40 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
 		47ACA9B1148AC24600B7B971 /* iIdioms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iIdioms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47ACA9B5148AC24600B7B971 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		47ACA9B8148AC24600B7B971 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -68,9 +76,28 @@
 			name = IdiomsProvider;
 			sourceTree = "<group>";
 		};
+		475D08FC14900052000F9F40 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				475D08FD1490008B000F9F40 /* tray_icon.ico */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		475D08FF14901195000F9F40 /* MA */ = {
+			isa = PBXGroup;
+			children = (
+				475D0900149011C7000F9F40 /* MAAttachedWindow.h */,
+				475D0901149011C7000F9F40 /* MAAttachedWindow.m */,
+			);
+			name = MA;
+			sourceTree = "<group>";
+		};
 		47ACA9A6148AC24600B7B971 = {
 			isa = PBXGroup;
 			children = (
+				475D08FF14901195000F9F40 /* MA */,
+				475D08FC14900052000F9F40 /* Images */,
 				47B3ED3B148D8B7400014AF6 /* Controllers */,
 				47B3ED34148D863800014AF6 /* nibs */,
 				471C4E06148BFE9800D292CF /* IdiomsProvider */,
@@ -116,6 +143,8 @@
 				47ACA9C7148AC24600B7B971 /* iIdiomsAppDelegate.h */,
 				47ACA9C8148AC24600B7B971 /* iIdiomsAppDelegate.m */,
 				47ACA9BC148AC24600B7B971 /* Supporting Files */,
+				475D08F8148FF4A2000F9F40 /* IdiomsStatusBarItem.h */,
+				475D08F9148FF4A2000F9F40 /* IdiomsStatusBarItem.m */,
 			);
 			path = iIdioms;
 			sourceTree = "<group>";
@@ -214,6 +243,7 @@
 				47ACA9C6148AC24600B7B971 /* Credits.rtf in Resources */,
 				47ACA9CC148AC24600B7B971 /* MainMenu.xib in Resources */,
 				47B3ED42148D91E800014AF6 /* IdiomView.xib in Resources */,
+				475D08FE1490008B000F9F40 /* tray_icon.ico in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +260,8 @@
 				47ACA9D8148AC60B00B7B971 /* IdiomsProvider.m in Sources */,
 				47B3ED2E148D82FB00014AF6 /* AppController.m in Sources */,
 				47B3ED3F148D8BC300014AF6 /* IdiomViewController.m in Sources */,
+				475D08FA148FF4A2000F9F40 /* IdiomsStatusBarItem.m in Sources */,
+				475D0902149011C7000F9F40 /* MAAttachedWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

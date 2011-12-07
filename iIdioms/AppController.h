@@ -8,7 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+@class IdiomsStatusBarItem;
+
 @interface AppController : NSObject
+{
+    IdiomsStatusBarItem *statusBarItem;
+}
+
 @property (assign) IBOutlet NSView *IdiomView;
+
+@property (assign) IBOutlet NSMenu *AppMenu;
 
 @end
