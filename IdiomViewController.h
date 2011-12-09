@@ -18,5 +18,6 @@
 @property (assign) IBOutlet NSTextField *IdiomName;
 @property (assign) IBOutlet NSTextField *IdiomDescription;
 @property (assign) IBOutlet NSTextField *IdiomExample;
+@property (assign) IBOutlet NSProgressIndicator *ProgressIndicator;
 
 @end
